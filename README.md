@@ -26,3 +26,22 @@ inline_tests {
     testcase("0", "0")
 };
 ```
+
+The `inline_tests` above will verify that with input `"1"` we get output `"2"`, input `"5"` gives us output `"10"`, and so on. These are all valid, so the program runs as usual.
+
+If we instead something like:
+
+```cpp
+inline_tests {
+    testcase("1", "100")
+};
+```
+
+Where the code's output does not match the testcase given, we will see the following printed to stdout:
+
+```
+Wrong Answer at testcase 1, expected:
+100
+Got:
+2
+```
