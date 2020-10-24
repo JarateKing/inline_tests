@@ -53,3 +53,5 @@ For most general development, you might prefer to have different testcases for s
 In competitive programming, that process can be bulky and annoying and overly complicated. Usually, it's preferable to come with a few specific testcases and verify that the input provided equals the desired output. Generally it's easier to have everything in front of you and clearly editable, rather than having to fiddle with multiple files. Because maintainability is essentially ignored and speed to write is vital, these priorities are very different from regular software development.
 
 `inline_tests` was designed specifically for this. Everything can be included in one file and testcases can be quickly added or edited without any hassle.
+
+It comes with the additional benefit of working on many online compilers, where you do not have access to the build process and likely only have access to one file to edit.
