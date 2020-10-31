@@ -1,6 +1,8 @@
 # inline_tests
 
-`inline_tests` is a minimal header-only testing framework designed for competitive programming
+`inline_tests` is a minimal header-only testing framework designed for competitive programming. It is designed to handle sample inputs and verify outputs directly, all within the same file as the sourcecode to make it faster to develop a working solution to a given task.
+
+This is not recommended for general software development, and is specifically oriented for competitive programming which has many different prefered practices.
 
 ## Usage
 
