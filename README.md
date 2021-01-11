@@ -1,6 +1,8 @@
 # inline_tests
 
-`inline_tests` is a minimal header-only testing framework designed for competitive programming
+`inline_tests` is a minimal header-only testing framework designed for competitive programming. It is designed to handle sample inputs and verify outputs directly, all within the same file as the sourcecode to make it faster to develop a working solution to a given task.
+
+This is not recommended for general software development, and is specifically oriented for competitive programming which has many different prefered practices.
 
 ## Usage
 
@@ -45,3 +47,13 @@ Wrong Answer at testcase 1, expected:
 Got:
 2
 ```
+
+## Motivation
+
+For most general development, you might prefer to have different testcases for specific functions that exist in different files.
+
+In competitive programming, that process can be bulky and annoying and overly complicated. Usually, it's preferable to come with a few specific testcases and verify that the input provided equals the desired output. Generally it's easier to have everything in front of you and clearly editable, rather than having to fiddle with multiple files. Because maintainability is essentially ignored and speed to write is vital, these priorities are very different from regular software development.
+
+`inline_tests` was designed specifically for this. Everything can be included in one file and testcases can be quickly added or edited without any hassle.
+
+It comes with the additional benefit of working on many online compilers, where you do not have access to the build process and likely only have access to one file to edit.
