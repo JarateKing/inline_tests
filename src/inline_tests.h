@@ -1,5 +1,6 @@
 #ifdef INLINE_TESTS
 int main();
+// handle testcases by redirecting IO
 int testcase_counter = 1, assertion_counter = 1;
 void testcase_internal(string in, string answer) {
     stringstream input(in), output;
@@ -17,6 +18,7 @@ void testcase_internal(string in, string answer) {
         cout << "Wrong Answer at testcase " << testcase_counter << ", expected:\n" << answer << "\nGot:\n" << out << "\n\n";
     testcase_counter++;
 }
+// handle assertions
 template <typename func>
 void assert_internal(func f) {
     if (!f())
